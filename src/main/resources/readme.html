@@ -1,0 +1,154 @@
+<h1 id="preconditions">Preconditions</h1>
+
+<ul>
+<li>If not stated otherwise: all coding tasks should be done in Java, input files should not be edited </li>
+<li>Let us know if any of the URLs in your tasks are not available </li>
+<li>Answers should be provided in a single .zip archive, also prefer to have them all in one project supplied with pom file if you use external libraries. Please save the file in the cloud and share the link with us.</li>
+<li>We are using IntelliJ IDEA.</li>
+<li>You can use git repository to publish project and send us link.</li>
+<li>Please check and test your code before sending.</li>
+</ul>
+
+<h1 id="task-a1">Task #A1</h1>
+
+<p>Create a code that will output each of the one-day headers from a <a href="task_A1.html">task_A1.html</a> file in the same way.</p>
+
+<p>Sample output:<br> </p>
+
+
+
+<pre class="prettyprint"><code class=" hljs mathematica"><span class="hljs-number">10</span>-<span class="hljs-number">10</span>-<span class="hljs-number">2017</span>    DEMAND (B.<span class="hljs-keyword">C</span>)    GENERATION(<span class="hljs-number">1234</span>,<span class="hljs-number">56</span>)    MOTORES DIESEL    TURBINA DE GAS    FUEL Y GAS    CICLO COMBINADO    GENERACIó<span class="hljs-keyword">N</span>.AUXILIAR
+<span class="hljs-number">10</span>-<span class="hljs-number">10</span>-<span class="hljs-number">2017</span>    DEMAND (B.<span class="hljs-keyword">C</span>)    GENERATION(<span class="hljs-number">1234</span>,<span class="hljs-number">56</span>)    MOTORES DIESEL    TURBINA DE GAS    FUEL Y GAS    CICLO COMBINADO    GENERACIó<span class="hljs-keyword">N</span>.AUXILIAR
+<span class="hljs-number">10</span>-<span class="hljs-number">10</span>-<span class="hljs-number">2017</span>    DEMAND (B.<span class="hljs-keyword">C</span>)    GENERATION(<span class="hljs-number">1234</span>,<span class="hljs-number">56</span>)    MOTORES DIESEL    TURBINA DE GAS    FUEL Y GAS    CICLO COMBINADO    GENERACIó<span class="hljs-keyword">N</span>.AUXILIAR</code></pre>
+
+
+
+<h1 id="task-sql2">Task #SQL2</h1>
+
+<p>Using a table below write a SQL commands that:</p>
+
+<ul>
+<li>Will find any customers that ordered more than 200 tones of the product and is from the UK.</li>
+<li>Will update the type of the product to <code>corn</code> for client with <code>id=2</code></li>
+<li>Get the total amount for UK</li>
+</ul>
+
+
+
+<h6 id="table-1-orders">Table 1: ORDERS</h6>
+
+<table>
+<thead>
+<tr>
+  <th>ID</th>
+  <th>ContactName</th>
+  <th>Address</th>
+  <th>City</th>
+  <th>PostalCode</th>
+  <th>Country</th>
+  <th>Amount[tones]</th>
+  <th>Type</th>
+</tr>
+</thead>
+<tbody><tr>
+  <td>1</td>
+  <td>Schmidt GmbH</td>
+  <td>Obere,Str. 57</td>
+  <td>Frankfurt</td>
+  <td>12209</td>
+  <td>Germany</td>
+  <td>150</td>
+  <td>Barley</td>
+</tr>
+<tr>
+  <td>2</td>
+  <td>Meraux</td>
+  <td>Avda. de la Constitucion 2222</td>
+  <td>Paris</td>
+  <td>05021</td>
+  <td>France</td>
+  <td>24</td>
+  <td>Soybean</td>
+</tr>
+<tr>
+  <td>3</td>
+  <td>Petersen A/S</td>
+  <td>Sundvej 2312</td>
+  <td>Aarhus</td>
+  <td>05023</td>
+  <td>Denmark</td>
+  <td>89</td>
+  <td>Cotton</td>
+</tr>
+<tr>
+  <td>4</td>
+  <td>Hardy Co.</td>
+  <td>120 Hanover Sq.</td>
+  <td>London</td>
+  <td>WA1 1DP</td>
+  <td>UK</td>
+  <td>32</td>
+  <td>Potato</td>
+</tr>
+<tr>
+  <td>5</td>
+  <td>Berglund</td>
+  <td>Berguvsvägen 8</td>
+  <td>Luleå</td>
+  <td>S-958 22</td>
+  <td>Sweden</td>
+  <td>78</td>
+  <td>Cotton</td>
+</tr>
+<tr>
+  <td>6</td>
+  <td>Fonda,Commodities</td>
+  <td>Mosley,Street 11</td>
+  <td>Manchester</td>
+  <td>M2 3JL</td>
+  <td>UK</td>
+  <td>220</td>
+  <td>Early Rice</td>
+</tr>
+<tr>
+  <td>5</td>
+  <td>McBoatie</td>
+  <td>Baker Street 21</td>
+  <td>London</td>
+  <td>81-3782</td>
+  <td>UK</td>
+  <td>78</td>
+  <td>Onion</td>
+</tr>
+</tbody></table>
+
+
+
+
+<h1 id="task-a3">Task #A3</h1>
+
+<p>Write an application that downloads the page from (<a href="http://www.mercado.ren.pt/EN/Electr/MarketInfo/Gen/Pages/Forecast.aspx">http://www.mercado.ren.pt/EN/Electr/MarketInfo/Gen/Pages/Forecast.aspx</a>) and prints the amount of energy, <br>
+the source from which it was produced and if it’s forecast or actual value. <br>
+Note, that black numbers are actual data, green ones – forecast.</p>
+
+<p>The output should follow the format:</p>
+
+
+
+<pre class="prettyprint"><code class=" hljs ruby"><span class="hljs-constant">Actual</span><span class="hljs-symbol">:</span> <span class="hljs-constant">HH</span> <span class="hljs-constant">Wind</span><span class="hljs-symbol">:&lt;amount</span> of energy created from <span class="hljs-string">"Wind"</span>&gt; <span class="hljs-constant">Solar</span><span class="hljs-symbol">:&lt;amount</span> of energy created from <span class="hljs-string">"Solar"</span>&gt; <span class="hljs-constant">Others</span><span class="hljs-symbol">:&lt;amount</span> of energy created from <span class="hljs-string">"Others"</span>&gt;
+<span class="hljs-constant">Forecast</span><span class="hljs-symbol">:</span> <span class="hljs-constant">HH</span> <span class="hljs-constant">Wind</span><span class="hljs-symbol">:&lt;amount</span> of energy created from <span class="hljs-string">"Wind"</span>&gt; <span class="hljs-constant">Solar</span><span class="hljs-symbol">:&lt;amount</span> of energy created from <span class="hljs-string">"Solar"</span>&gt; <span class="hljs-constant">Others</span><span class="hljs-symbol">:&lt;amount</span> of energy created from <span class="hljs-string">"Others"</span>&gt;</code></pre>
+
+
+
+<h1 id="task-b4">Task #B4</h1>
+
+<p>Create an application that will load text from file <a href="/task_B4.txt">task_B4.txt</a> <br>
+and print out all the countries which GDP is a prime number, ordered alphabetically and in clear format (without info in braces “[n 1][19]” ) .</p>
+
+
+
+<h1 id="task-a5">Task #A5</h1>
+
+<p>Get the text file. Create an appication which outputs <code>storm name</code> and <code>maximum sustained wind-speed</code> in knots for each of the storms after 2015 with name ending with <code>A</code>  <br>
+* Format description: <a href="http://www.nhc.noaa.gov/data/hurdat/hurdat2-format-nencpac.pdf">http://www.nhc.noaa.gov/data/hurdat/hurdat2-format-nencpac.pdf</a> <br>
+* Hurricane tracks file: <a href="http://www.nhc.noaa.gov/data/hurdat/hurdat2-nepac-1949-2016-041317.txt">http://www.nhc.noaa.gov/data/hurdat/hurdat2-nepac-1949-2016-041317.txt</a> </p>
