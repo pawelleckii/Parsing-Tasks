@@ -2,21 +2,20 @@ package refinitiv.TaskA5;
 
 
 import java.io.BufferedReader;
-import java.io.IOException;
 import java.io.InputStreamReader;
 import java.net.URL;
-import java.util.*;
+import java.util.LinkedHashMap;
+import java.util.Map;
 
 public class TaskA5 {
 
-    public static final int BORDER_YEAR = 2015;
-    public static final int SPEED_COLUMN = 6;
+    private static final int BORDER_YEAR = 2015;
+    private static final int SPEED_COLUMN = 6;
 
     public static void main(String[] args) {
-        BufferedReader in = null;
         try {
             URL url = new URL("https://www.nhc.noaa.gov/data/hurdat/hurdat2-nepac-1949-2016-041317.txt");
-            in = new BufferedReader(new InputStreamReader(url.openStream()));
+            BufferedReader in = new BufferedReader(new InputStreamReader(url.openStream()));
             String line;
             String hurricaneName = null;
             int maxSpeed = 0;
@@ -40,14 +39,6 @@ public class TaskA5 {
 
         } catch (Exception e) {
             e.printStackTrace();
-        } finally {
-            try {
-                if (in != null) {
-                    in.close();
-                }
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
         }
     }
 
